@@ -1,4 +1,8 @@
+
 # README
+
+MIX allows users to get cocktails inspiration, use recipes, and review and rate them.
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
