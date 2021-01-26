@@ -8,6 +8,7 @@
 
 user1 = User.create(name: "Claire", age: 21)
 user2 = User.create(name: "Noura", age: 21)
+user3 = User.create(name: "Lily", age: 22)
 
 boozy_1 = Category.create(name: "Boozy")
 sour_2 = Category.create(name: "Sour")
