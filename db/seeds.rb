@@ -18,6 +18,22 @@
 #   },
 # ]
 
+
+user1 = User.create(name: "Claire", age: 21)
+user2 = User.create(name: "Noura", age: 21)
+
+
+boozy_1 = Category.create(name: "Boozy")
+
+sour_2 = Category.create(name: "Sour")
+
+sweet_3 = Category.create(name: "Sweet")
+
+bitter_4 = Category.create(name: "Bitter")
+
+others_5 = Category.create(name: "Other Tastes")
+
+
 singapore_sling = Cocktail.create(category_id: 3, name: "Singapore Sling", image: "https://i.pinimg.com/600x315/69/69/51/6969517834501c3406eaf70ab8883354.jpg", recipe: "1/2 oz Cherry brandy, 1/2 oz Grenadine, 1 oz Gin, 2 oz Sweet and sour, Carbonated water, Cherry. Place all the ingredients, other than the sparkling water into a cocktail shaker and shake with ice. Strain into an ice-filled hurricane glass and top up with sparkling water. Garnish with the lemon slice and cherry")
 
 grass_skirt = Cocktail.create(category_id: 3, name: "Grass Skirt", image: "https://www.thecocktaildb.com/images/media/drink/qyvprp1473891585.jpg", recipe: "1 1/2 oz Gin, 1 oz Triple sec, 1 oz Pineapple juice, 1/2 tsp Grenadine, 1 Pineapple. In a shaker half-filled with ice cubes, combine the gin, triple sec, pineapple juice, and grenadine. Shake well. Pour into an old-fashioned glass and garnish with the pineapple slice.")
@@ -32,27 +48,11 @@ whiskey_sour = Cocktail.create(category_id: 2, name: "Whiskey Sour" , image: "ht
 
 
 
-boozy_1 = Category.create(name: "Boozy")
-
-sour_2 = Category.create(name: "Sour")
-
-sweet_3 = Category.create(name: "Sweet")
-
-bitter_4 = Category.create(name: "Bitter")
-
-others_5 = Category.create(name: "Other Tastes")
-
-
-
-
 review1 = Review.create(user_id: 1, cocktail_id: 1, rating: 4, review_text: "I love this cocktail with bourbon.")
 review2 = Review.create(user_id: 1, cocktail_id: 2, rating: 5, review_text: "So good with lots of lime!")
 review3 = Review.create(user_id: 2, cocktail_id: 1, rating: 5, review_text: "My drink of choice.")
 review4 = Review.create(user_id: 2, cocktail_id: 2, rating: 4, review_text: "An excellent drink on a hot day.")
 
 
-
-user1 = User.create(name: "Claire", age: 21)
-user2 = User.create(name: "Noura", age: 21)
 
 puts "seeded"
