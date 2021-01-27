@@ -4,13 +4,17 @@ class UsersController < ApplicationController
         users = User.all
         render json: users
     end 
-    
-    def show
-        user = User.find(params[:id])
+
+    # def show
+    #     user = User.find(params[:id])
+    #     render json: user
+    # end 
+
+    def show_by_username
+        user = User.find_by(name: params[:name])
         render json: user
-    end 
-
-
+    end
+    
 
     def create
         user = User.create(user_params)
@@ -28,7 +32,7 @@ class UsersController < ApplicationController
   private 
 
     def user_params
-        params.permit(:username, :age)
+        params.permit(:name, :age)
     end 
 
 end

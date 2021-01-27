@@ -6,9 +6,12 @@ Rails.application.routes.draw do
   
   # user routes
   get "/users", to: "users#index"
-  get "/users/:id", to: "users#show"
+  # get "/users/:id", to: "users#show"
+  get "/users/:name", to: "users#show_by_username"
   post "/users", to: "users#create"
   delete "/delete", to: "users#delete"
+
+
 
   #categories routes
   get '/categories', to: 'categories#index', as: 'categories'
@@ -17,6 +20,6 @@ Rails.application.routes.draw do
   get '/cocktails', to: 'cocktails#index', as: 'cocktails'
   
   post '/reviews', to: 'reviews#create'
-  patch'/reviews/:id', to: 'reviews#update'
+  patch '/reviews/:id', to: 'reviews#update'
 
 end
