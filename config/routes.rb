@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get "/categories", to: "categories#index", as: "categories"
 
   get "/cocktails", to: "cocktails#index", as: "cocktails"
+  get '/cocktails/:id', to: 'cocktails#show'
 
   post "/reviews", to: "reviews#create"
   patch "/reviews/:id", to: "reviews#update"
