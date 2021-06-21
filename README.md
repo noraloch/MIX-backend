@@ -4,10 +4,6 @@
 
 MIX is a web app built with Javascript and Ruby on Rails. This project is split into two repositories, backend (current) and [frontend](https://github.com/nouraloudani/MIX-frontend).   A user can browse cocktail receipes, comment and rate them. They can as well update their comments or ratings. 
 
-## Usage
-
-<img src="./img/mix.gif" alt="gif" />
-
 
 ## Prerequisites
 
